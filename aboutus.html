@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana|Open+Sans" />
+
+        <title> Soul 2 Soul Cafe</title>        
+    </head>
+
+    <body style="font-family:Verdana;color:#45267e;">
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                        <a href="index.html"><img src="img/logoCafe.jpeg" class="img-fluid"/></a>
+                    </div>
+                    <div class="col"> 
+                        <h1 style="font-size:5vw; text-align:center">Soul 2 Soul Cafe</h1>
+                        <h2>Affordable Meals To Go</h2>
+                    </div>
+                </div> 
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logoCafe.jpeg" width="30" height="30" /></a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#soulNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="soulNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-shopping-basket fa-lg"></i>Weekly Menu</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="aboutus.html"><i class="fa fa-credit-card fa-lg"></i>Order Here</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact Us</a></li>
+                    </ul>
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Login</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label"> Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Orders may be placed until 9 a.m. day of. Pick up will be at the Anthony Wayne Trail Parking Lot.</h2>
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                        </div>
+                        <div class="col-7">
+                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <h1 style="text-align:left;">Shopping Cart</h1>
+ 
+                    <div class="shopping-cart">
+                    
+                        <div class="column-labels">
+                            <label class="product-image">Image</label>
+                            <label class="product-details">Product</label>
+                            <label class="product-price">Price</label>
+                            <label class="product-quantity">Quantity</label>
+                            <label class="product-removal">Remove</label>
+                            <label class="product-line-price">Total</label>
+                        </div>
+                    
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="img/apricot-ginger-salmon-nuggets-5.jpg">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-title">Balanced Meal</div>
+                                <p class="product-description"> Apricot Ginger Salmon Nuggets with brown rice and mixed vegetables.</p>
+                            </div>
+                            <div class="product-price">40.00</div>
+                                <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                </div>
+                            <div class="product-removal">
+                                <button class="remove-product">
+                                    Remove
+                                </button>
+                            </div>
+                        <div class="product-line-price">80.00</div>
+                    </div>
+                    
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="img/paleo boats.jpg">
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Paleo Keto Boats</div>
+                            <p class="product-description">Zucchini boats stuffed with lean high quality ground beef and topped with parmesean cheese</p>
+                        </div>
+                        <div class="product-price">40.00</div>
+                            <div class="product-quantity">
+                                <input type="number" value="1" min="1">
+                            </div>
+                        <div class="product-removal">
+                            <button class="remove-product">
+                                Remove
+                            </button>
+                        </div>
+                        <div class="product-line-price">40.00</div>
+                    </div>
+                    
+                    <div class="totals">
+                        <div class="totals-item">
+                            <label>Subtotal</label>
+                            <div class="totals-value" id="cart-subtotal">120.00</div>
+                        </div>
+                        <div class="totals-item">
+                            <label>Tax (5%)</label>
+                            <div class="totals-value" id="cart-tax">3.60</div>
+                        </div>
+                        <div class="totals-item">
+                            <label>Delivery Flat-Rate</label>
+                            <div class="totals-value" id="cart-shipping">10.00</div>
+                        </div>
+                        <div class="totals-item totals-item-total">
+                            <label>Grand Total</label>
+                            <div class="totals-value" id="cart-total">133.60</div>
+                        </div>
+                    </div> 
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          Select Date for Pick Up ONLY
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Monday, 2/15/2021</a>
+                          <a class="dropdown-item" href="#">Wednesday, 2/17/2021</a>
+                          <a class="dropdown-item" href="#">Friday, 2/19/2021 </a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          Select Date for Delivery ONLY
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Monday, 2/15/2021</a>
+                          <a class="dropdown-item" href="#">Wednesday, 2/17/2021</a>
+                          <a class="dropdown-item" href="#">Friday, 2/19/2021 </a>
+                        </div>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+                        <label class="custom-control-label" for="customRadio">Master Card</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+                        <label class="custom-control-label" for="customRadio2">Visa Card</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="customRadio3" name="example" value="customEx">
+                        <label class="custom-control-label" for="customRadio3">Discover Card</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="customRadio4" name="example" value="customEx">
+                        <label class="custom-control-label" for="customRadio4">American Express</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name as appears on card</label>
+                        <input type="name" class="form-control" placeholder="Name as it appears on card" id="name">
+                      </div>
+                    <div class="form-group">
+                        <label for="creditCard">Credit Card Number:</label>
+                        <input type="creditCard" class="form-control" placeholder="Enter credit card number" id="creditCard">
+                      </div>
+                    
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button class="checkout">Checkout</button>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>  
+
+        <footer>
+            <div>
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Weekly Menu</a></li>
+                    <li><a href="aboutus.html">Order Here</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i> </a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i> </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+17345551234"><i class="fa fa-phone"></i> 1-734-555-1234</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:soul2soulcafe@nucampportfolio.co"><i class="fa fa-envelope-o"></i> soul2soulcafe@nucampportfolio.co</a>
+                    </div>
+                </div>
+    
+        </footer>
+    </body>
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+     
+    
+</html>  
